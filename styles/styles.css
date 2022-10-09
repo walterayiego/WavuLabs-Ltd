@@ -1,0 +1,175 @@
+.slide_left {
+  animation: slide_left ease-in forwards;
+  animation-delay: 50ms;
+  animation-duration: 300ms;
+  transform: translateX(-100%);
+}
+
+@keyframes slide_left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide_right {
+  animation: slide_right ease-in-out forwards;
+  animation-delay: 100ms;
+  animation-duration: 300ms;
+  transform: translateX(+100%);
+}
+
+@keyframes slide_right {
+  0% {
+    transform: translateX(+100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.fade_in {
+  animation: fade_in ease-in forwards;
+  animation-duration: 400ms;
+  animation-delay: 100ms;
+  opacity: 0;
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1.05;
+    animation-play-state: paused;
+  }
+}
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(105% + 1.3px);
+  height: 191px;
+}
+
+.wave .shape-fill {
+  fill: #ecf0f3;
+}
+.bluetxt {
+  color: #5651e5;
+}
+/* 
+.wavulogo {
+  background-image: url("../public/assets/Transparent.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  animation: wavulogo 1s ease-in forwards;
+  animation-delay: 100ms;
+}
+@keyframes wavulogo {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+} */
+.mergeLeft {
+  animation: mergeLeft ease-in forwards;
+  animation-delay: 100ms;
+  animation-duration: 1s;
+  transform: translateX(-100%);
+}
+@keyframes mergeLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.mergeRight {
+  animation: mergeRight ease-in forwards;
+  animation-delay: 50ms;
+  animation-duration: 1s;
+  transform: translateX(+100%);
+}
+
+@keyframes mergeRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.hideAtStart {
+  opacity: 0;
+  animation: hideAtStart 1s ease-in forwards;
+  animation-delay: 1s;
+}
+@keyframes hideAtStart {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  opacity: 0;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #5651e5; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 1.8s steps(20, start) 2s forwards,
+    blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #5651e5;
+  }
+}
+
+.changeColor:after {
+  content: attr(data-text);
+  color: #5651e5;
+}
+.logo{
+  background-image: url("../public/assets/Transparent.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
