@@ -8,7 +8,7 @@ import Customers from "../components/Customers";
 import About from "../components/About";
 export default function Home() {
   return (
-    <div className=" relative mx-2">
+    <div className=" overflow-hidden relative mx-2">
       <Head>
         <title>WavuLabs</title>
         <meta
