@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
 import twitchImg from "../public/assets/projects/twitch.jpg";
 import ProjectItem from "./ProjectItem";
@@ -36,7 +35,7 @@ const Projects = () => {
           <ProjectItem
             title="Crypto App"
             backgroundImg={cryptoImg}
-            projectUrl="/crypto"
+            projectUrl="/"
             tech="React JS"
             animeStyle="slide_right"
           />
@@ -50,15 +49,16 @@ const Projects = () => {
           <ProjectItem
             title="Twitch UI"
             backgroundImg={twitchImg}
-            projectUrl="/twitch"
+            projectUrl="/"
             tech="Next JS"
             animeStyle="slide_right"
           />
           <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
             <p>For more visit our
             <Link href="">
-              <a className=" text-yellow-800 font-semibold text-2xl "> Github </a>
+              <a className=" text-yellow-800 font-semibold text-2xl "> Github Page</a>
             </Link>
+            
             
             </p>
             <div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import Image from "next/image";
 import LogoTransparent from "../public/assets/Transparent.png";
 import LogoTransparentLeft from "../public/assets/TransparentLeft.png";
@@ -49,7 +49,7 @@ const Main = () => {
         <div className="fixed -bottom-7 right-60 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         {/* <div className={` absolute h-1/3 w-3/4 wavulogo `} ></div> */}
         <div className=" flex flex-col justify-between sm:gap-5 ease-in">
-            {/* Image PART */}
+          {/* Image PART */}
           <div className={` flex flex-row justify-center ${hideLogo}`}>
             {/* Image left */}
             <div className="mergeLeft">
@@ -72,7 +72,9 @@ const Main = () => {
               />
             </div>
           </div>
-          <p className= {`sm:hideAtStart ${showLetsBuild} opacity-0 sm:opacity-100 ease-in uppercase text-sm tracking-widest text-gray-600`}>
+          <p
+            className={`sm:hideAtStart ${showLetsBuild} opacity-0 sm:opacity-100 ease-in uppercase text-sm tracking-widest text-gray-600`}
+          >
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
           <div className=" hideAtStart flex justify-center">
@@ -96,9 +98,9 @@ const Main = () => {
               sectors.
             </span>
           </p>
-          <div className=" hideAtStart flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className=" hideAtStart flex items-center justify-between gap-4 max-w-[330px] m-auto py-4">
             <a
-              href="https://www.linkedin.com/in/clint-briley-50056920a/"
+              href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
               target="_blank"
               rel="noreferrer"
             >
@@ -106,8 +108,9 @@ const Main = () => {
                 <FaLinkedinIn />
               </div>
             </a>
+
             <a
-              href="https://github.com/fireclint"
+              href="https://github.com/WavuLabs"
               target="_blank"
               rel="noreferrer"
             >
@@ -115,15 +118,22 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
+            <a
+              href="https://github.com/WavuLabs"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
-            </Link>
-            <Link href="/resume">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
-              </div>
+            </a>
+
+            <Link href="https://discord.gg/DaWkYWFP">
+              <a>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <FaDiscord />
+                </div>
+              </a>
             </Link>
           </div>
         </div>

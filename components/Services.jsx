@@ -9,8 +9,8 @@ import BusinessAnalyticts from "../public/assets/Icons/BusinessAnalyticts.png";
 
 const Services = () => {
   const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
-  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.5, triggerOnce: true });
-  const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.5,  triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.3, triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.3,  triggerOnce: true });
 
   return (
     <div

@@ -183,7 +183,7 @@ const Navbar = (  ) => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/WavuLabs'
                   target='_blank'
                   rel='noreferrer'
                 >

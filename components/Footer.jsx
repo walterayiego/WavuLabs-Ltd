@@ -1,9 +1,9 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import React from "react";
 import Link from "next/link";
-import LogoTransparent from '../public/assets/Transparent.png';
+import LogoTransparent from "../public/assets/Transparent.png";
 import Image from "next/image";
 const Footer = () => {
   return (
@@ -41,9 +41,9 @@ const Footer = () => {
         <span className="">
           Copyright by {new Date().getFullYear()} All rights reserved
         </span>
-        <div className="flex  h-16 items-center justify-between max-w-[330px] m-auto p-4">
+        <div className="flex gap-2 h-16 items-center justify-between max-w-[330px] m-auto p-4">
           <a
-            href="https://www.linkedin.com/in/clint-briley-50056920a/"
+            href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
             target="_blank"
             rel="noreferrer"
           >
@@ -51,8 +51,9 @@ const Footer = () => {
               <FaLinkedinIn />
             </div>
           </a>
+
           <a
-            href="https://github.com/fireclint"
+            href="https://github.com/WavuLabs"
             target="_blank"
             rel="noreferrer"
           >
@@ -60,15 +61,22 @@ const Footer = () => {
               <FaGithub />
             </div>
           </a>
-          <Link href="/#contact">
+          <a
+            href="https://github.com/WavuLabs"
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <AiOutlineMail />
             </div>
-          </Link>
-          <Link href="/resume">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
-            </div>
+          </a>
+
+          <Link href="https://discord.gg/DaWkYWFP">
+            <a>
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaDiscord />
+              </div>
+            </a>
           </Link>
         </div>
       </div>

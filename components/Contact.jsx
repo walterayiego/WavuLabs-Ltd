@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import LogoTransparent from "../public/assets/Transparent.png";
 
 const Contact = () => {
@@ -33,9 +33,9 @@ const Contact = () => {
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Us</p>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-between py-4 gap-4">
                   <a
-                    href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                    href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -43,8 +43,9 @@ const Contact = () => {
                       <FaLinkedinIn />
                     </div>
                   </a>
+
                   <a
-                    href="https://github.com/fireclint"
+                    href="https://github.com/WavuLabs"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -52,14 +53,20 @@ const Contact = () => {
                       <FaGithub />
                     </div>
                   </a>
-
+                  <a
+                    href="https://github.com/WavuLabs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
-                  <Link href="/resume">
+                  </a>
+
+                  <Link href="https://discord.gg/DaWkYWFP">
                     <a>
                       <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <BsFillPersonLinesFill />
+                        <FaDiscord/>
                       </div>
                     </a>
                   </Link>
@@ -85,6 +92,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
+                      required
                     />
                   </div>
                   <div className="flex flex-col">
@@ -95,6 +103,7 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
+                      required
                     />
                   </div>
                 </div>
@@ -104,6 +113,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
+                    required
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -112,6 +122,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
+
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -120,6 +131,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
+                    required
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">

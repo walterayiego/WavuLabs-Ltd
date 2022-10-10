@@ -41,7 +41,7 @@ const About = () => {
           <br></br>
           <br></br>
 
-          <div className=" relative p-5 bg-white rounded-lg items-center divide-y divide-slate-200 justify-center">
+          <div className=" relative p-5 bg-white rounded-lg items-center divide-y divide-slate-300 justify-center">
             <h3 className="uppercase text-xl font-semibold text-center tracking-widest text-[#5651e5]">
               Our Mission
             </h3>
