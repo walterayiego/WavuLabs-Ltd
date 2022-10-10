@@ -43,10 +43,10 @@ const Main = () => {
 
       {/* BUBBLES ANIMATION */}
       <div className="max-w-[1240px] w-full h-top h-full p-2 px-5 flex justify-center items-center ">
-        <div className="absolute top-0 left-2 w-56 h-56 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-0 left-56 w-56 h-56 bg-red-300 opacity-0 sm:opacity-70 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-6000"></div>
-        <div className="absolute top-1/4 right-1/4 w-56 h-56 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute -bottom-7 right-60 w-56 h-56 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="fixed top-0 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="fixed top-0 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-6000"></div>
+        <div className="fixed top-1/4 right-1/4 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="fixed -bottom-7 right-60 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         {/* <div className={` absolute h-1/3 w-3/4 wavulogo `} ></div> */}
         <div className=" flex flex-col justify-between sm:gap-5 ease-in">
             {/* Image PART */}
