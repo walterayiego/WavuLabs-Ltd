@@ -11,12 +11,12 @@ const Projects = () => {
   return (
     <div id="projects" className={`w-full `}>
       <div className={`relative max-w-[1240px] px-2 py-16 `}>
-        {/* <div className=" flex items-center">
+        <div className=" flex items-center">
           <div className="absolute top-14 left-2 w-56 h-56 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div className="absolute top-1/2 left-56 w-56 h-56 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
           <div className="absolute top-1/4 right-10 w-56 h-56 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
           <div className="absolute -bottom-7 right-60 w-56 h-56 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-        </div> */}
+        </div>
 
         <div className={``}>
           <p className={`text-xl headings tracking-widest uppercase `}>
