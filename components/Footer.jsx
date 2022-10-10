@@ -25,7 +25,7 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="flex flex-col pb-10 relative bottom-0 gap-4  ">
+      <div className="flex  flex-col pb-10 relative max-w-full bottom-0 gap-4  ">
         {/* CREATING THE LOGO DIV */}
         <div className=" flex justify-center items-center grid-cols-3 gap-1 pb-2">
           <div className=" flex justify-center">
