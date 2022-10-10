@@ -9,10 +9,10 @@ const About = () => {
       id="About"
       className="relative w-full h-fit p-2 items-center py-16 text-center"
     >
-      {/* <div className="absolute top-10 left-2 w-56 h-56 bg-purple-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob"></div>
+      <div className="absolute top-10 left-2 w-56 h-56 bg-purple-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob"></div>
       <div className="absolute top-0 left-56 w-56 h-56 bg-red-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
       <div className="absolute top-1/4 right-10 w-56 h-56 bg-yellow-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-7 right-60 w-56 h-56 bg-pink-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
+      <div className="absolute -bottom-7 right-60 w-56 h-56 bg-pink-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
       <div
         className={`relative justify-center ${
