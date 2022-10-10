@@ -9,7 +9,7 @@ import LogoTransparent from "../public/assets/Transparent.png";
 const Contact = () => {
   return (
     <div id="contact" className=" relative w-full h-fit">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
+      <div className="max-w-[1240px] px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase headings">Contact</p>
         <h2 className="px-4"> Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
