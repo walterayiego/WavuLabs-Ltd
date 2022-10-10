@@ -28,11 +28,7 @@ const Services = () => {
       <div className="absolute -bottom-7 -right-1/4 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
       <div className=" gap-y-6 mx-2 px-1 sm:px-10 ">
-        <div
-          ref={ref}
-          className="lg:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl 
-          rounded-xl py-7"
-        >
+        <div ref={ref} className="sm:grid grid-cols-3 bg-slate-200 scale-105 drop-shadow-2xl  rounded-xl py-7" >
           <div className={`col-span-2  ${inView ? "slide_left" : "opacity-0"}`}>
             <h3 className="uppercase text-2xl text-[#5651e5]">
               Software Development
@@ -64,7 +60,7 @@ const Services = () => {
         </div>
 
         {/* Service 2 */}
-        <div ref={ref2} className="my-7  md:grid grid-cols-3 gap-8 py-7">
+        <div ref={ref2} className=" my-7 sm:grid grid-cols-3 gap-8 py-7">
           <div
             className={`${
               inView2 ? "fade_in" : "opacity-0"
@@ -98,10 +94,7 @@ const Services = () => {
         </div>
         {/* Service 3 */}
 
-        <div
-          ref={ref3}
-          className=" lg:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl rounded-xl py-7"
-        >
+        <div ref={ref3} className=" sm:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl rounded-xl py-7">
           <div
             className={` relative grid col-span-2 ${
               inView3 ? "slide_left" : "opacity-0"

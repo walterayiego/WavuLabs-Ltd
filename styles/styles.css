@@ -15,7 +15,7 @@
 }
 .slide_right {
   animation: slide_right ease-in-out forwards;
-  animation-delay: 100ms;
+  animation-delay: 50ms;
   animation-duration: 300ms;
   transform: translateX(+100%);
 }
@@ -31,7 +31,7 @@
 .fade_in {
   animation: fade_in ease-in forwards;
   animation-duration: 400ms;
-  animation-delay: 100ms;
+  animation-delay: 50ms;
   opacity: 0;
 }
 @keyframes fade_in {
@@ -47,7 +47,7 @@
 .fade_out {
   animation: fade_out ease-in forwards;
   animation-duration: 400ms;
-  animation-delay: 100ms;
+  animation-delay: 50ms;
   opacity: 1;
 }
 @keyframes fade_out {
@@ -82,27 +82,9 @@
 .bluetxt {
   color: #5651e5;
 }
-/* 
-.wavulogo {
-  background-image: url("../public/assets/Transparent.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  animation: wavulogo 1s ease-in forwards;
-  animation-delay: 100ms;
-}
-@keyframes wavulogo {
-  0% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-} */
 .mergeLeft {
   animation: mergeLeft ease-in forwards;
-  animation-delay: 100ms;
+  animation-delay: 50ms;
   animation-duration: 1s;
   transform: translateX(-100%);
 }
@@ -181,11 +163,4 @@
 .changeColor:after {
   content: attr(data-text);
   color: #5651e5;
-}
-.logo{
-  background-image: url("../public/assets/Transparent.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
 }

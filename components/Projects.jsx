@@ -58,8 +58,6 @@ const Projects = () => {
             <Link href="">
               <a className=" text-yellow-800 font-semibold text-2xl "> Github Page</a>
             </Link>
-            
-            
             </p>
             <div>
             </div>

@@ -19,20 +19,15 @@ const Customers = () => {
     <div id="Customers" className="relative h-fit py-4">
       <h3 className="text-center py-9 font-bold text-2xl headings">
         What we promise
-        {/* <div className=" h-1/2 w-1/2 wavulogo "> sadsadas</div> */}
       </h3>
       <p className="text-center py-3 font-semibold text-2xl"> 
         How we serve our clients
       </p>
-      {/* <div className="absolute top-14 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-      <div className="absolute top-1/2 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
-      <<div className="absolute top-1/3 right-10 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-7 right-60 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
 
       <Swiper
         style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          "--swiper-navigation-color": "#666",
+          "--swiper-pagination-color": "#666",
         }}
         speed={600}
         parallax={true}

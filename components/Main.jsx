@@ -1,10 +1,8 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import Image from "next/image";
-import LogoTransparent from "../public/assets/Transparent.png";
 import LogoTransparentLeft from "../public/assets/TransparentLeft.png";
 import LogoTransparentRight from "../public/assets/TransparentRight.png";
 import { useInView } from "react-intersection-observer";
@@ -32,7 +30,7 @@ const Main = () => {
     <div
       ref={ref}
       id="Home"
-      className="relative w-screen h-screen text-center clipPage flex justify-center "
+      className="relative w-screen min-h-screen text-center clipPage flex justify-center "
     >
       {/* PAGE LOADING ANIMATION */}
       <div
@@ -47,7 +45,6 @@ const Main = () => {
         <div className="fixed top-0 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-6000"></div>
         <div className="fixed top-1/4 right-1/4 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="fixed -bottom-7 right-60 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
-        {/* <div className={` absolute h-1/3 w-3/4 wavulogo `} ></div> */}
         <div className=" flex flex-col justify-between sm:gap-5 ease-in">
           {/* Image PART */}
           <div className={` flex flex-row justify-center ${hideLogo}`}>
@@ -119,7 +116,7 @@ const Main = () => {
               </div>
             </a>
             <a
-              href="https://github.com/WavuLabs"
+              href="/#contact"
               target="_blank"
               rel="noreferrer"
             >

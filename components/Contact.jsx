@@ -2,19 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import LogoTransparent from "../public/assets/Transparent.png";
 
 const Contact = () => {
   return (
-    <div id="contact" className=" clipPage relative w-full h-fit">
+    <div id="contact" className=" clipPage relative items-center w-screen h-fit">
       <div className="max-w-[1240px] px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase headings">Contact</p>
-        <h2 className="px-4"> Get In Touch</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <h2 className="text-center py-2"> Get In Touch</h2>
+        <div className="grid lg:grid-cols-5 gap-8 items-center">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 sm:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -33,7 +32,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Us</p>
-                <div className="flex items-center justify-between py-4 gap-4">
+                <div className="flex flex-row justify-center py-4 gap-4">
                   <a
                     href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
                     target="_blank"
