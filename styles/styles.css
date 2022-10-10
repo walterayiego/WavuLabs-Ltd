@@ -44,6 +44,22 @@
     animation-play-state: paused;
   }
 }
+.fade_out {
+  animation: fade_out ease-in forwards;
+  animation-duration: 400ms;
+  animation-delay: 100ms;
+  opacity: 1;
+}
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 1.05;
+    animation-play-state: paused;
+  }
+}
 .wave {
   position: absolute;
   top: 0;

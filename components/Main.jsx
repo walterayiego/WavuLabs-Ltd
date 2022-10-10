@@ -11,7 +11,7 @@ import { useInView } from "react-intersection-observer";
 
 const Main = () => {
   const [startAnimation, setStartAnimation] = useState("fixed");
-  const [hideLogo, setHideLogo] = useState("block");
+  const [hideLogo, setHideLogo] = useState("");
   const [showLetsBuild, setShowLetsBuild] = useState("hidden ");
   const [ref, inView] = useInView({ threshold: 0.5, triggerOnce: true });
   useEffect(() => {
@@ -20,7 +20,7 @@ const Main = () => {
         setStartAnimation("hidden");
       }
       if (window.scrollY >= 150) {
-        setHideLogo("hidden");
+        setHideLogo("fade_out");
         setShowLetsBuild("block");
       }
     };
@@ -32,7 +32,7 @@ const Main = () => {
     <div
       ref={ref}
       id="Home"
-      className="relative w-screen h-screen text-center  flex justify-center "
+      className="relative w-screen h-screen text-center clipPage flex justify-center "
     >
       {/* PAGE LOADING ANIMATION */}
       <div
@@ -57,7 +57,7 @@ const Main = () => {
                 src={LogoTransparentLeft}
                 alt="/"
                 width="200"
-                height="150"
+                height="100"
                 className={`cursor-pointer slide_left `}
               />
             </div>
@@ -67,7 +67,7 @@ const Main = () => {
                 src={LogoTransparentRight}
                 alt="/"
                 width="200"
-                height="150"
+                height="100"
                 className={`cursor-pointer `}
               />
             </div>

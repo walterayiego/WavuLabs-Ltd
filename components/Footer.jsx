@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className=" relative bottom-0  flex  w-full h-96 justify-center items-end bg-[#1f2937] text-white"
+      className=" relative bottom-0 clipPage flex  w-full h-96 justify-center items-end bg-[#1f2937] text-white"
     >
       <div className="wave bg-opacity-0">
         <svg

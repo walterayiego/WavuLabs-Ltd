@@ -65,7 +65,10 @@ html {
   }
   
 }
-div{
+/* div{
+  overflow-x: clip;
+} */
+/* h4{ @apply #6c50a1 #4e7bbe  #d4bb50 #86d2da   } */
+.clipPage{
   overflow-x: clip;
 }
-/* h4{ @apply #6c50a1 #4e7bbe  #d4bb50 #86d2da   } */

@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import cryptoImg from "../public/assets/projects/crypto.jpg";
-import netflixImg from "../public/assets/projects/netflix.jpg";
 import twitchImg from "../public/assets/projects/twitch.jpg";
 import ProjectItem from "./ProjectItem";
 import MetaWild from "../public/assets/MetaWild.png";
 import Election from "../public/assets/projects/Election.jpeg";
 const Projects = () => {
   return (
-    <div id="projects" className={`w-full `}>
+    <div id="projects" className={`w-full clipPage `}>
       <div className={`relative max-w-[1240px] px-2 py-16 `}>
         <div className=" flex items-center">
           <div className="absolute top-14 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
@@ -22,8 +22,8 @@ const Projects = () => {
           <p className={`text-xl headings tracking-widest uppercase `}>
             Projects
           </p>
-          <h2 className="text-center py-4">Snip of what we&apos;ve Built</h2>
-          <p>For more visit our github page</p>
+          <h2 className="text-center py-4">What we&apos;ve Built</h2>
+          
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
@@ -54,6 +54,16 @@ const Projects = () => {
             tech="Next JS"
             animeStyle="slide_right"
           />
+          <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
+            <p>For more visit our
+            <Link href="">
+              <a className=" text-yellow-800 font-semibold text-2xl "> Github </a>
+            </Link>
+            
+            </p>
+            <div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

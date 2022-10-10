@@ -21,7 +21,8 @@ const Customers = () => {
         What we promise
         {/* <div className=" h-1/2 w-1/2 wavulogo "> sadsadas</div> */}
       </h3>
-      <p className="text-center py-3 font-semibold text-2xl"> Rules we abide by when serving our clients
+      <p className="text-center py-3 font-semibold text-2xl"> 
+        How we serve our clients
       </p>
       {/* <div className="absolute top-14 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
       <div className="absolute top-1/2 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>

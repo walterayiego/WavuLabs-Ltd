@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className="relative w-full h-fit p-2 items-center py-16 text-center"
+      className="relative w-full clipPage h-fit p-2 items-center py-16 text-center"
     >
       <span className="text-center pt-9 font-bold text-2xl headings ">
         SERVICES
@@ -27,13 +27,13 @@ const Services = () => {
       <div className="absolute top-1/4 right-10 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-7 -right-1/4 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-      <div className=" gap-y-2.5 mx-2 px-1 sm:px-10 ">
+      <div className=" gap-y-6 mx-2 px-1 sm:px-10 ">
         <div
           ref={ref}
           className="lg:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl 
           rounded-xl py-7"
         >
-          <div className={`col-span-2 ${inView ? "slide_left" : "opacity-0"}`}>
+          <div className={`col-span-2  ${inView ? "slide_left" : "opacity-0"}`}>
             <h3 className="uppercase text-2xl text-[#5651e5]">
               Software Development
             </h3>
@@ -47,7 +47,7 @@ const Services = () => {
               for small scale and enterprise level. With a large team and a
               robust tech stack,
             </p>
-            <p>we can build anything!</p>
+            <p>We can build anything!</p>
           </div>
           {/* image div */}
           <div
@@ -84,7 +84,7 @@ const Services = () => {
             Consultancy</h3>
             {/* <h2 className="py-4">What do we offfer</h2> */}
             <p className="py-2 text-gray-600">
-              I am not your average developer
+             Expert advice on your business needs.
             </p>
             <p className="py-2 text-gray-600">
               We offer IT consultancy; which includes both advisory and
