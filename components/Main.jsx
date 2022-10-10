@@ -30,7 +30,7 @@ const Main = () => {
     <div
       ref={ref}
       id="Home"
-      className="relative w-screen min-h-screen text-center clipPage flex justify-center "
+      className="relative w-screen h-screen text-center clipPage flex justify-center "
     >
       {/* PAGE LOADING ANIMATION */}
       <div
