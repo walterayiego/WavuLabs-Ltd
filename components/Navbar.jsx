@@ -2,10 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { FaDiscord, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import LogoTransparent from '../public/assets/Transparent.png';
-import { useInView } from 'react-intersection-observer';
 
 const Navbar = (  ) => {
   const [nav, setNav] = useState(false);
@@ -16,7 +14,6 @@ const Navbar = (  ) => {
   const [btnShadow, setBtnShadow] = useState('');
   const [showImage, setShowImage] = useState("hidden");
   const [hideLogo, setHideLogo] = useState("");
-  const { ref, inView } = useInView({ threshold: 1, triggerOnce: true });
 
 
   const handleNav = () => {
@@ -174,7 +171,7 @@ const Navbar = (  ) => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/wavu-labs-bba2a2253'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -199,12 +196,12 @@ const Navbar = (  ) => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <Link href='https://discord.gg/DaWkYWFP'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'
                   >
-                    <BsFillPersonLinesFill />
+                    <FaDiscord />
                   </div>
                 </Link>
               </div>

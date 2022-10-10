@@ -109,10 +109,10 @@ const Services = () => {
           >
             <h3 className="uppercase text-2xl text-[#5651e5]">Maintenance</h3>
             <p className="py-2 text-gray-600">
-              I am not your average developer
+              Fully serviced IT support and maintenance.
             </p>
             {/* <h2 className="py-4">What do we offfer</h2> */}
-            <p className=" py-2 text-gray-600">
+            <p className=" p-2 text-left text-gray-600">
               We offer both software and hardware maintenance support for all
               types of businesses, organizations or firms. These include:{" "}
             </p>
