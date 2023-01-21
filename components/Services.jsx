@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <div
       id="Services"
-      className="relative w-full clipPage h-fit p-2 items-center py-16 text-center"
+      className="relative w-full h-fit p-2 items-center py-16 text-center"
     >
       <span className="text-center pt-9 font-bold text-2xl headings ">
         SERVICES
@@ -116,7 +116,7 @@ const Services = () => {
               Fully serviced IT support and maintenance.
             </p>
             {/* <h2 className="py-4">What do we offfer</h2> */}
-            <p className=" py-2 text-left text-gray-600">
+            <p className=" py-2 text-center text-gray-600">
               We offer both software and hardware maintenance support for all
               types of businesses, organizations or firms. These include:{" "}
             </p>

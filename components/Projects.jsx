@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import AfordiaZero from "../public/assets/projects/AfordiaZero.png";
+import Garage from "../public/assets/projects/garage.png";
 import kgrid from "../public/assets/projects/k-grid.png";
 import ProjectItem from "./ProjectItem";
 import RoomHike from "../public/assets/projects/RoomHike.png";
@@ -12,8 +12,8 @@ import mrowa from "../public/assets/projects/mrowa.png";
 
 const Projects = () => {
   return (
-    <div id="projects" className={`w-full clipPage `}>
-      <div className={`relative max-w-[1240px] px-2 py-16 `}>
+    <div id="projects" className={`w-full  `}>
+      <div className={`relative px-2 py-16 `}>
         <div className=" flex items-center">
           <div className="absolute top-14 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div className="absolute top-1/2 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
@@ -43,9 +43,9 @@ const Projects = () => {
             animeStyle="slide_right"
           />
           <ProjectItem
-            title="Software Development Company Landing Page"
-            backgroundImage={AfordiaZero}
-            projectUrl="https://www.afordiazero.com/"
+            title="Online Community"
+            backgroundImage={Garage}
+            projectUrl="https://thegarage-sepia.vercel.app/"
             tech="React JS"
             animeStyle="slide_left"
           />

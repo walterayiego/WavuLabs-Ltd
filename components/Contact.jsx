@@ -7,8 +7,8 @@ import LogoTransparent from "../public/assets/Transparent.png";
 
 const Contact = () => {
   return (
-    <div id="contdact" className=" clipPage relative items-center w-screen h-fit">
-      <div className="max-w-[1240px] px-2 py-16 w-full ">
+    <div id="contdact" className=" relative items-center w-screen h-fit">
+      <div className=" px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase headings">Contact</p>
         <h2 className="text-center py-2"> Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8 items-center">
@@ -29,9 +29,6 @@ const Contact = () => {
                   We are available for all kinds of projects. Contact
                   us and let&apos;s talk.
                 </p>
-
-
-                <embed src="../wavuProfile.pdf"/>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Us</p>

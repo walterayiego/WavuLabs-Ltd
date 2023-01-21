@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import WaltPassport from "../public/assets/waltpassport.jpg";
-
+import Block3 from "../public/assets/Icons/Block3.png";
 function Founders() {
   return (
     <div id="contact"  className="w-full h-fit p-6 ">
@@ -42,7 +42,7 @@ function Founders() {
             <div className="grid grid-rows-3 gap-4 justify-start items-center">
               <div className="  m-auto">
                 <Image
-                  src={WaltPassport}
+                  src={Block3}
                   width="100%"
                   height="100%"
                   alt="/"
