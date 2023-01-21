@@ -4,9 +4,9 @@ import WaltPassport from "../public/assets/waltpassport.jpg";
 
 function Founders() {
   return (
-    <div className="w-full h-fit p-6 ">
+    <div id="contact"  className="w-full h-fit p-6 ">
       <div className=" mx-auto gird grid-col justify-center items-center h-full">
-        <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center">
+        <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center p-6">
           Founders
         </h4>
 

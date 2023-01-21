@@ -7,9 +7,10 @@ import Footer from "../components/Footer";
 import Customers from "../components/Customers";
 import About from "../components/About";
 import Founders from "../components/Founders";
+
 export default function Home() {
   return (
-    <div className="clipPage">
+    <div className="clipPage scrollbar-hide ">
       <Head>
         <title>WavuLabs</title>
         <meta

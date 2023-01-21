@@ -7,7 +7,7 @@ import LogoTransparent from "../public/assets/Transparent.png";
 
 const Contact = () => {
   return (
-    <div id="contact" className=" clipPage relative items-center w-screen h-fit">
+    <div id="contdact" className=" clipPage relative items-center w-screen h-fit">
       <div className="max-w-[1240px] px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase headings">Contact</p>
         <h2 className="text-center py-2"> Get In Touch</h2>

@@ -4049,6 +4049,11 @@
     "dom7" "^4.0.4"
     "ssr-window" "^4.0.2"
 
+"tailwind-scrollbar-hide@^1.1.7":
+  "integrity" "sha512-X324n9OtpTmOMqEgDUEA/RgLrNfBF/jwJdctaPZDzB3mppxJk7TLIDmOreEDm1Bq4R9LSPu4Epf8VSdovNU+iA=="
+  "resolved" "https://registry.npmjs.org/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.1.7.tgz"
+  "version" "1.1.7"
+
 "tailwindcss-intersect@^1.0.1":
   "integrity" "sha512-metJ0PRVeZzCIjii9mT4vujC5nxoeqaeSAYS0AMzzgJ2jQyLAPj8r881ZBS6EvlEMyv023Gi4BC2wcGo8zxGBA=="
   "resolved" "https://registry.npmjs.org/tailwindcss-intersect/-/tailwindcss-intersect-1.0.1.tgz"

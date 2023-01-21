@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+body::-webkit-scrollbar {
+  width: 0.4em;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: #000000;
+}
 html {
   scroll-behavior: smooth;
   font-family: "Raleway", sans-serif;
