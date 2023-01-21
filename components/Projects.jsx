@@ -1,11 +1,15 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import cryptoImg from "../public/assets/projects/crypto.jpg";
-import twitchImg from "../public/assets/projects/twitch.jpg";
+import AfordiaZero from "../public/assets/projects/AfordiaZero.png";
+import kgrid from "../public/assets/projects/k-grid.png";
 import ProjectItem from "./ProjectItem";
-import MetaWild from "../public/assets/MetaWild.png";
-import Election from "../public/assets/projects/Election.jpeg";
+import RoomHike from "../public/assets/projects/RoomHike.png";
+import smalltownzebra from "../public/assets/projects/smalltownzebra.png";
+import theryze from "../public/assets/projects/theryze.png";
+import kladz from "../public/assets/projects/kladz.png";
+import creek from "../public/assets/projects/creek.png";
+import mrowa from "../public/assets/projects/mrowa.png";
+
 const Projects = () => {
   return (
     <div id="projects" className={`w-full clipPage `}>
@@ -22,45 +26,75 @@ const Projects = () => {
             Projects
           </p>
           <h2 className="text-center py-4">What we&apos;ve Built</h2>
-          
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="MetaWild"
-            backgroundImg={MetaWild}
-            projectUrl="https://www.metawild.org/"
+            title="Ryze Network"
+            backgroundImage={theryze}
+            projectUrl="https://www.theryze.net/"
             tech="React JS"
             animeStyle="slide_left"
           />
           <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/"
+            title="Book a Hike"
+            backgroundImage={RoomHike}
+            projectUrl="https://roomhike.vercel.app/"
             tech="React JS"
             animeStyle="slide_right"
           />
           <ProjectItem
-            title="Election Dapp"
-            backgroundImg={Election}
-            projectUrl="https://github.com/Walt437/election"
-            tech="React JS and Solidity"
+            title="Software Development Company Landing Page"
+            backgroundImage={AfordiaZero}
+            projectUrl="https://www.afordiazero.com/"
+            tech="React JS"
             animeStyle="slide_left"
           />
           <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/"
+            title="Smalltownzebra. Blog Website"
+            backgroundImage={smalltownzebra}
+            projectUrl="https://smalltownzebra.vercel.app/"
             tech="Next JS"
             animeStyle="slide_right"
           />
+          <ProjectItem
+            title="Ecommerce Website"
+            backgroundImage={kladz}
+            projectUrl="https://kladz.vercel.app/"
+            tech="React JS"
+            animeStyle="slide_left"
+          />
+          <ProjectItem
+            title="Outfit Generator"
+            backgroundImage={kgrid}
+            projectUrl="https://kgrid.vercel.app/"
+            tech="Next JS + AI"
+            animeStyle="slide_right"
+          />
+          <ProjectItem
+            title="Landing Page"
+            backgroundImage={creek}
+            projectUrl="https://creek-agency.vercel.app/"
+            tech="Vanilla JS"
+            animeStyle="slide_left"
+          />
+          <ProjectItem
+            title="Mrowa. Blog Website"
+            backgroundImage={mrowa}
+            projectUrl="https://mrowa.vercel.app/"
+            tech="Vanilla JS"
+            animeStyle="slide_right"
+          />
           <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
-            <p>For more visit our
-            <Link href="">
-              <a className=" text-yellow-800 font-semibold text-2xl "> Github Page</a>
-            </Link>
+            <p>
+              For more visit our
+              <Link href="">
+                <a className=" text-yellow-800 font-semibold text-2xl ">
+                  {" "}
+                  Github Page
+                </a>
+              </Link>
             </p>
-            <div>
-            </div>
+            <div></div>
           </div>
         </div>
       </div>

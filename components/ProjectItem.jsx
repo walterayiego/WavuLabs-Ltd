@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const ProjectItem = ({
   title,
-  backgroundImg,
+  backgroundImage,
   tech,
   projectUrl,
   animeStyle,
@@ -14,19 +14,17 @@ const ProjectItem = ({
   return (
     <div ref={ref}>
       <div
-        className={`relative flex items-center justify-center h-full w-full shadow-xl shadow-gray-400
+        className={`relative grid items-center justify-center h-full w-full shadow-xl shadow-gray-400
             rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff] ${
               inView ? animeStyle : "opacity-0"
             }`}
       >
-        <div className="flex min-h-full items-center ">
-          <div className="object-cover w-full h-full">
-            <Image
-              className="rounded-xl group-hover:opacity-10 object-fill  "
-              src={backgroundImg}
-              alt="/"
-            />
-          </div>
+        <div className={`flex w-full h-full`}>
+          <Image
+            className="rounded-xl group-hover:opacity-10  object-cover "
+            src={backgroundImage}
+            alt="/"
+          />
         </div>
         <div
           className={`hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]`}

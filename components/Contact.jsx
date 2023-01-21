@@ -26,9 +26,12 @@ const Contact = () => {
                 <h2 className="py-2"> WavuLabs</h2>
                 <p>Software Development company</p>
                 <p className="py-4">
-                  We are available for freelance or full-time positions. Contact
+                  We are available for all kinds of projects. Contact
                   us and let&apos;s talk.
                 </p>
+
+
+                <embed src="../wavuProfile.pdf"/>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Us</p>

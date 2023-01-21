@@ -9,8 +9,14 @@ import BusinessAnalyticts from "../public/assets/Icons/BusinessAnalyticts.png";
 
 const Services = () => {
   const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
-  const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.3, triggerOnce: true });
-  const { ref: ref3, inView: inView3 } = useInView({ threshold: 0.3,  triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
 
   return (
     <div
@@ -28,7 +34,10 @@ const Services = () => {
       <div className="absolute -bottom-7 -right-1/4 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
       <div className=" gap-y-6 mx-2 px-1 sm:px-10 ">
-        <div ref={ref} className="sm:grid grid-cols-3 bg-slate-200 scale-105 drop-shadow-2xl  rounded-xl py-7" >
+        <div
+          ref={ref}
+          className="sm:grid grid-cols-3 bg-slate-200 scale-105 drop-shadow-2xl  rounded-xl py-7"
+        >
           <div className={`col-span-2  ${inView ? "slide_left" : "opacity-0"}`}>
             <h3 className="uppercase text-2xl text-[#5651e5]">
               Software Development
@@ -76,11 +85,10 @@ const Services = () => {
               inView2 ? "slide_right" : "opacity-0"
             }`}
           >
-            <h3 className=" uppercase text-2xl text-[#4f1669]">
-            Consultancy</h3>
+            <h3 className=" uppercase text-2xl text-[#4f1669]">Consultancy</h3>
             {/* <h2 className="py-4">What do we offfer</h2> */}
             <p className="py-2 text-gray-600">
-             Expert advice on your business needs.
+              Expert advice on your business needs.
             </p>
             <p className="py-2 text-gray-600">
               We offer IT consultancy; which includes both advisory and
@@ -94,7 +102,10 @@ const Services = () => {
         </div>
         {/* Service 3 */}
 
-        <div ref={ref3} className=" sm:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl rounded-xl py-7">
+        <div
+          ref={ref3}
+          className=" sm:grid grid-cols-3 my-6 bg-slate-200 scale-105 drop-shadow-2xl rounded-xl py-7"
+        >
           <div
             className={` relative grid col-span-2 ${
               inView3 ? "slide_left" : "opacity-0"
@@ -130,19 +141,25 @@ const Services = () => {
         </div>
 
         {/* Other Services */}
-        <div className="w-full h-fit p-2 ">
-          <div className=" mx-auto flex flex-col justify-center items-center h-fit">
+        <div className="w-full p-2 ">
+          <div className=" mx-auto grid grid-col justify-center items-center h-fit">
             <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center">
               Other services
             </h4>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 h-1/2 items-center gap-8">
-              <div className=" p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className=" grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
+              {/* content */}
+              <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full">
                 <div className="grid grid-rows-3 gap-4 justify-start items-center">
-                  <div className="m-auto">
-                    <Image src={BusinessAnalyticts} width="64px" height="64px" alt="/" />
+                  <div className="">
+                    <Image
+                      src={BusinessAnalyticts}
+                      width="64px"
+                      height="64px"
+                      alt="/"
+                    />
                   </div>
-                  <div className="flex flex-col row-span-2 items-center justify-start">
+                  <div className="grid grid-col row-span-2 items-center justify-start">
                     <h3 className="uppercase text-xl tracking-widest text-[#5651e5]">
                       BUSINESS ANALYTICS
                     </h3>
@@ -168,30 +185,69 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 py-4 h-full ">
-                <div className=" h-full grid grid-rows-3 gap-4 justify-start items-center">
-                  <div className=" row-span-1 ">
-                    <Image src={DigitalMarketing} width="64px" height="64px" alt="/" />
+              <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full">
+                <div className="grid grid-rows-3 gap-4 justify-start items-center">
+                  <div className=" row-span-1 my-6">
+                    <Image
+                      src={DigitalMarketing}
+                      width="64px"
+                      height="64px"
+                      alt="/"
+                    />
                   </div>
-                  <div className="flex flex-col row-span-2 justify-start">
+                  <div className="grid grid-col row-span-2 justify-start">
                     <h3 className="uppercase text-xl tracking-widest text-[#5651e5]">
                       DIGITAL MARKETING
                     </h3>
                     <p className={`text-gray-600 text-lg py-2`}>
-                      Have your radiant online presence; 
+                      Have your radiant online presence;
                     </p>
-                    <p className=" font-semibold">Glow and Grow!</p>
-                    <br></br>
                     <p className="text-gray-600 text-center">
                       With the right digital marketing strategy, you can reach
                       your target audience. With our tools and comprehensive
                       digital marketing network of partners, we have the
                       wherewithal to help you dominate the online world!
                     </p>
-                    <p className="text-lg font-semibold">
-                      Sales! Sales! Sales!
+                    <p className=" my-3 text-lg font-semibold">
+                      Glow and Grow!
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* last div */}
+            <div className=" mt-4 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+              <div className="grid grid-rows-3 gap-4 justify-start items-center">
+                <div className="">
+                  <Image
+                    src={BusinessAnalyticts}
+                    width="64px"
+                    height="64px"
+                    alt="/"
+                  />
+                </div>
+                <div className="flex flex-col row-span-2 items-center justify-start">
+                  <h3 className="uppercase text-xl tracking-widest text-[#5651e5]">
+                    BUSINESS ANALYTICS
+                  </h3>
+                  <p className={`text-gray-600 text-lg py-2`}>
+                    Understand and optimize your business
+                  </p>
+                  <p className="text-gray-600 text-center">
+                    Through data analysis, we bring deep learning tools and AI
+                    to grow your business to the next level. Understanding
+                    customer behaviour and mapping said behaviour helps us
+                    create incentive structures for your customers personalizing
+                    their experience and establishing their loyalty.{" "}
+                  </p>
+                  <p>
+                    A universal product for the aforementined service is at its
+                    core.
+                  </p>
+                  <p className="text-lg font-semibold">
+                    Become an early adopter!
+                  </p>
                 </div>
               </div>
             </div>

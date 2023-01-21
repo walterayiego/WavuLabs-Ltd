@@ -6,9 +6,10 @@ import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 import Customers from "../components/Customers";
 import About from "../components/About";
+import Founders from "../components/Founders";
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="clipPage">
       <Head>
         <title>WavuLabs</title>
         <meta
@@ -23,6 +24,7 @@ export default function Home() {
       <About />
       <Projects />
       <Customers />
+      <Founders/>
       <Contact />
       <Footer />
     </div>
