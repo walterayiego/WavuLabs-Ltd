@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body::-webkit-scrollbar {
   width: 0.4em;
-  background-color: #F5F5F5;
+  background-color: #c3d1e6;
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: #000000;
+  background-color: #eab308;
 }
 html {
   scroll-behavior: smooth;
@@ -72,12 +71,11 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
-  
 }
 /* div{
   overflow-x: clip;
 } */
 /* h4{ @apply #6c50a1 #4e7bbe  #d4bb50 #86d2da   } */
-.clipPage{
+.clipPage {
   overflow-x: clip;
 }

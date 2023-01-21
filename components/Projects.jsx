@@ -84,7 +84,7 @@ const Projects = () => {
             tech="Vanilla JS"
             animeStyle="slide_right"
           />
-          <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
+          {/* <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
             <p>
               For more visit our
               <Link href="">
@@ -94,8 +94,7 @@ const Projects = () => {
                 </a>
               </Link>
             </p>
-            <div></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

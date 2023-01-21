@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import WaltPassport from "../public/assets/waltpassport.jpg";
-import Block3 from "../public/assets/Icons/Block3.png";
+import AlvoPassport from "../public/assets/AlvoPassport.jpeg";
+
 function Founders() {
   return (
     <div id="contact"  className="w-full h-fit p-6 ">
@@ -19,7 +20,7 @@ function Founders() {
                   width="100%"
                   height="100%"
                   alt="/"
-                  className="ring-offset-purple-300 rounded-full"
+                  className="ring-offset-purple-300 rounded-full object-cover"
                 />
               </div>
               <div className="flex flex-col row-span-2 items-center justify-start">
@@ -32,7 +33,7 @@ function Founders() {
                   the field and a certificate in mobile app development.
                   Well-versed in JavaScript using in JavaScript frameworks such
                   as Node.js and using React, and React Native to develop
-                  full-stack applications. Experience with Java
+                  full-stack applications. Experienced with Java.
                 </p>
               </div>
             </div>
@@ -42,7 +43,7 @@ function Founders() {
             <div className="grid grid-rows-3 gap-4 justify-start items-center">
               <div className="  m-auto">
                 <Image
-                  src={Block3}
+                  src={AlvoPassport}
                   width="100%"
                   height="100%"
                   alt="/"
@@ -55,11 +56,11 @@ function Founders() {
                 </h3>
                 <p className={`text-gray-600 text-lg py-2`}>Co-Founder & MD</p>
                 <p className="text-gray-600 text-center">
-                  Has a strong background in computer science, with a degree in
-                  the field and a certificate in mobile app development.
-                  Well-versed in JavaScript using in JavaScript frameworks such
-                  as Node.js and using React, and React Native to develop
-                  full-stack applications.
+                A degree in computer science.
+                Strong background in Python Django development. 
+                Experience working with Firebase,building 
+                robust and scalable applications.
+                Familiar with web3 technology, building decentralized applications on Zilliqa and EVM blockchains. 
                 </p>
               </div>
             </div>

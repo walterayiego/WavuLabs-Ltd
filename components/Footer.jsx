@@ -1,9 +1,8 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import React from "react";
-import Link from "next/link";
 import LogoTransparent from "../public/assets/Transparent.png";
 import Image from "next/image";
+import Socials from "./Socials";
+
 const Footer = () => {
   return (
     <footer
@@ -40,44 +39,7 @@ const Footer = () => {
         <span className="">
           Copyright by {new Date().getFullYear()} All rights reserved
         </span>
-        <div className="flex gap-2 h-16 items-center justify-between max-w-[330px] m-auto p-4">
-          <a
-            href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
-            </div>
-          </a>
-
-          <a
-            href="https://github.com/WavuLabs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
-            </div>
-          </a>
-          <a
-            href="https://github.com/WavuLabs"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
-          </a>
-
-          <Link href="https://discord.gg/DaWkYWFP">
-            <a>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <FaDiscord />
-              </div>
-            </a>
-          </Link>
-        </div>
+        <Socials styles="justify-center gap-2 h-16 items-center justify-between max-w-[330px]" />
       </div>
     </footer>
   );

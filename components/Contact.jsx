@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 import LogoTransparent from "../public/assets/Transparent.png";
+import Socials from "./Socials";
 
 const Contact = () => {
   return (
@@ -26,50 +24,13 @@ const Contact = () => {
                 <h2 className="py-2"> WavuLabs</h2>
                 <p>Software Development company</p>
                 <p className="py-4">
-                  We are available for all kinds of projects. Contact
-                  us and let&apos;s talk.
+                  We are available for all kinds of projects. Contact us and
+                  let&apos;s talk.
                 </p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect With Us</p>
-                <div className="flex flex-row justify-center py-4 gap-4">
-                  <a
-                    href="https://www.linkedin.com/in/wavu-labs-bba2a2253"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
-                    </div>
-                  </a>
-
-                  <a
-                    href="https://github.com/WavuLabs"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
-                    </div>
-                  </a>
-                  <a
-                    href="https://github.com/WavuLabs"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  </a>
-
-                  <Link href="https://discord.gg/DaWkYWFP">
-                    <a>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                        <FaDiscord/>
-                      </div>
-                    </a>
-                  </Link>
-                </div>
+                <Socials />
               </div>
             </div>
           </div>
@@ -78,7 +39,7 @@ const Contact = () => {
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
-                action="https://formsubmit.co/walterayiego@gmail.com"
+                action="https://formsubmit.co/wavulabs@gmail.com"
                 method="POST"
                 // encType='multipart/form-data'
               >
@@ -121,7 +82,6 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
-
                   />
                 </div>
                 <div className="flex flex-col py-2">

@@ -50,14 +50,13 @@ const Customers = () => {
           <div className="title text-center" data-swiper-parallax="-300">
           </div>
           <div className="subtitle text-center" data-swiper-parallax="-200">
-            <h2>Sam Walton</h2>
+            <h2>Customer Satisfaction</h2>
             
           </div>
           <div className="text-center" data-swiper-parallax="-100">
             <p>
-              There is only one boss. The customer. And he can fire everybody in
-              the company from the chairman on down, simply by spending his
-              money somewhere else.
+            We will always prioritize customer satisfaction 
+            and work closely with you to understand and meet your specific needs.
             </p>
           </div>
         </SwiperSlide>
@@ -65,13 +64,12 @@ const Customers = () => {
           <div className="title text-center" data-swiper-parallax="-300">
           </div>
           <div className="subtitle text-center" data-swiper-parallax="-200">
-            <h2>Shep Hyken</h2>
+            <h2>Quality Service</h2>
           </div>
           <div className="text-center" data-swiper-parallax="-100">
             <p>
-              The key is when a customer walks away, thinking, &apos;Wow, I love
-              doing business with them, and I want to tell others about the
-              experience.&apos;.
+            Our team of experienced developers will use the latest technologies 
+            and best practices to deliver high-quality, reliable software that meets your requirements.
             </p>
           </div>
         </SwiperSlide>
@@ -79,12 +77,12 @@ const Customers = () => {
           <div className="title text-center" data-swiper-parallax="-300">
           </div>
           <div className="subtitle text-center" data-swiper-parallax="-200">
-          <h2>Maya Angelou</h2> 
+          <h2>Customer Commitment</h2> 
           </div>
           <div className="text-center" data-swiper-parallax="-100">
             <p>
-              People will forget what you said. They will forget what you did.
-              But they will never forget how you made them feel.
+            We will be dedicated to building long-term, positive relationships with our customers, 
+            and we will always be available to answer any questions or concerns you may have.
             </p>
           </div>
         </SwiperSlide>
