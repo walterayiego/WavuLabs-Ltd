@@ -14,18 +14,21 @@ export default function Home() {
       <Head>
         <title>WavuLabs</title>
         <meta
-          name="description"
-          content="I’m a front-end web developer specializing in building 
-          (and occasionally designing) exceptional digital experiences."
+          name="WavuLabs"
+          content="
+        WavuLabs is a software development company that provides custom IT solutions 
+        to startups and enterprises. We are a team of software engineers, designers, and project managers. 
+        We build custom software for startups and enterprises. 
+          "
         />
-        <link rel="icon" href="/fav.png" />
+        <link rel="icon" href="/public/assets/Transparent.png" />
       </Head>
       <Main />
       <Services />
       <About />
       <Projects />
       <Customers />
-      <Founders/>
+      <Founders />
       <Contact />
       <Footer />
     </div>
