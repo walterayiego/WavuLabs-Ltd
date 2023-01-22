@@ -19,6 +19,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const styles= "ml-10 text-sm uppercase hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105"
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -26,14 +27,12 @@ const Navbar = () => {
         setNavBg(
           "bg-gradient-to-r from-purple-500 via-yellow-300 to-cyan-200 "
         );
-        setBtnShadow("");
         setVisibilityNavList("block");
         setShowImage("block");
         setHideLogo("hidden");
       } else {
         setShadow(false);
         setNavBg("");
-        setBtnShadow("drop-shadow-2xl shadow-red-200 hover:scale-110 ");
       }
     };
     window.addEventListener("scroll", handleShadow);
@@ -67,32 +66,32 @@ const Navbar = () => {
         <div className={`${VisibilityNavList} ease-in duration-100`}>
           <ul style={{ color: `${linkColor}` }} className={`hidden md:flex`}>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={`${styles}`}
             >
               <Link href="/#Home">Home</Link>
             </li>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={` ${styles}`}
             >
               <Link href="/#Services">Services</Link>
             </li>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={` ${styles}`}
             >
               <Link href="/#About">About</Link>
             </li>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={` ${styles}`}
             >
               <Link href="/#projects">Projects</Link>
             </li>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={` ${styles}`}
             >
               <Link href="/#Customers">Customers</Link>
             </li>
             <li
-              className={`ml-10 text-sm uppercase hover:border-b ${btnShadow}`}
+              className={`ml-10 text-sm uppercase hover:border-b ${styles}`}
             >
               <Link href="/#contact">Contact</Link>
             </li>

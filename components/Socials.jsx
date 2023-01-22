@@ -1,9 +1,8 @@
-import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaDiscord } from "react-icons/fa";
 
-function Socials({styles}) {
+function Socials({ styles }) {
   return (
     <div className={`flex flex-row py-4 ${styles}`}>
       <a
