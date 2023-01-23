@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import LogoTransparent from "../public/assets/Transparent.png";
 import Socials from "./Socials";
 
 const Contact = () => {
   return (
-    <div id="contdact" className=" relative items-center w-screen h-fit">
+    <div id="contact" className=" relative items-center w-screen h-fit">
       <div className=" px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase headings">Contact</p>
         <h2 className="text-center py-2"> Get In Touch</h2>
@@ -27,8 +28,22 @@ const Contact = () => {
                   We are available for all kinds of projects. Contact us and
                   let&apos;s talk.
                 </p>
+                {/*View Company Profile */}
+
+                <div className="flex flex-col">
+                  <p className="">
+                    Click here to view
+                    <a
+                      className="text-lg pl-2 tracking-widest text-[#5651e5]"
+                      href="https://pdfhost.io/v/nmvXEZJdG_Dark_Modern_and_Elegant_Company_Profile_Presentation"
+                    >
+                      Company Profile
+                    </a>{" "}
+                  </p>
+                </div>
               </div>
               <div>
+                <embed src="" />
                 <p className="uppercase pt-8">Connect With Us</p>
                 <Socials />
               </div>

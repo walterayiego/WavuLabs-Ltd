@@ -41,7 +41,7 @@ const Main = () => {
       </div>
 
       {/* BUBBLES ANIMATION */}
-      <div className="max-w-[1240px] w-full h-top h-full p-2 px-5 flex justify-center items-center ">
+      <div className=" w-full h-top h-full p-2 px-5 flex justify-center items-center ">
         <div className="fixed top-0 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
         <div className="fixed top-0 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-6000"></div>
         <div className="fixed top-1/4 right-1/4 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
@@ -49,7 +49,7 @@ const Main = () => {
         <div className=" flex flex-col justify-between sm:gap-5 ease-in">
           {/* Image PART */}
           <div
-            className={` flex flex-row border justify-center items-center ${hideLogo}`}
+            className={` flex flex-row justify-center items-center ${hideLogo}`}
           >
             <div className="ease-in mergeLeft">
               <Image

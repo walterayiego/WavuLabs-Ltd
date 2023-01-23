@@ -5,7 +5,7 @@ import AlvoPassport from "../public/assets/AlvoPassport.jpeg";
 
 function Founders() {
   return (
-    <div id="contact"  className="w-full h-fit p-6 ">
+    <div className="w-full h-fit p-6 ">
       <div className=" mx-auto gird grid-col justify-center items-center h-full">
         <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center p-6">
           Founders

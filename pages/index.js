@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Customers from "../components/Customers";
 import About from "../components/About";
 import Founders from "../components/Founders";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,14 +22,14 @@ export default function Home() {
         We build custom software for startups and enterprises. 
           "
         />
-        <link rel="icon" href="/public/assets/Transparent.png" />
+        <link rel="icon" href="https://i.ibb.co/Fgf5z6b/Transparent.png"  type="image/x-icon" />
       </Head>
       <Main />
       <Services />
       <About />
       <Projects />
-      <Customers />
       <Founders />
+      <Customers />
       <Contact />
       <Footer />
     </div>
