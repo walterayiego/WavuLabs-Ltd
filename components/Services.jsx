@@ -7,6 +7,7 @@ import Maintenance from "../public/assets/Icons/Maintenance.png";
 import DigitalMarketing from "../public/assets/Icons/DigitalMarketing.png";
 import BusinessAnalyticts from "../public/assets/Icons/BusinessAnalyticts.png";
 import bootcamp from "../public/assets/Icons/bootcamp.png";
+import { Link } from "@nextui-org/react";
 const Services = () => {
   const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({
@@ -221,12 +222,7 @@ const Services = () => {
             <div className=" mt-10 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
               <div className="grid grid-rows-3 gap-4 justify-start items-center">
                 <div className="">
-                  <Image
-                    src={bootcamp}
-                    width="64px"
-                    height="64px"
-                    alt="/"
-                  />
+                  <Image src={bootcamp} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col row-span-2 items-center justify-start">
                   <h3 className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -236,15 +232,24 @@ const Services = () => {
                     Learn and grow with us
                   </p>
                   <p className="text-gray-600 text-center">
-                    We offer bootcamps and training services for people of all ages. We aim
-                    to nurture and build talent in various fields but mainly focused on web development,
-                    web3, graphics and animation and mobile application development.{" "}
+                    We offer bootcamps and training services for people of all
+                    ages. We aim to nurture and build talent in various fields
+                    but mainly focused on web development, web3, graphics and
+                    animation and mobile application development.{" "}
                   </p>
                   <p>
-                    Drilled by our devs to have the impetus to even supplant them.
+                    Drilled by our devs to have the impetus to even supplant
+                    them.
                   </p>
+                  <div className="flex flex-row justify-center items-start space-x-2">
+                    <p>Click here to </p>
+                    <Link href="https://pdfhost.io/v/.QmxGFUPe_BootCamp">
+                      <a className="text-lg font-semibold">Learn more</a>
+                    </Link>
+                  </div>
+
                   <p className="text-lg font-semibold">
-                  Talk is cheap.Show me the code
+                    Talk is cheap.Show me the code
                   </p>
                 </div>
               </div>
