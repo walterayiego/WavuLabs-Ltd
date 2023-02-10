@@ -243,9 +243,12 @@ const Services = () => {
                   </p>
                   <div className="flex flex-row justify-center items-start space-x-2">
                     <p>Click here to </p>
-                    <Link href="https://pdfhost.io/v/.QmxGFUPe_BootCamp">
-                      <a className="text-lg font-semibold">Learn more</a>
-                    </Link>
+                    <a
+                      href="https://pdfhost.io/v/.QmxGFUPe_BootCamp"
+                      className="text-lg font-semibold text-[#5651e5]"
+                    >
+                      Learn more
+                    </a>
                   </div>
 
                   <p className="text-lg font-semibold">
