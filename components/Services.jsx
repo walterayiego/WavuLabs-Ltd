@@ -242,12 +242,14 @@ const Services = () => {
                     them.
                   </p>
                   <div className="flex flex-row justify-center items-start space-x-2">
-                    <p>Click here to </p>
+                    <p>
+                    Check out our latest 
+                     </p>
                     <a
                       href="https://pdfhost.io/v/.QmxGFUPe_BootCamp"
-                      className="text-lg font-semibold text-[#5651e5]"
+                      className="text-lg text-[#5651e5]"
                     >
-                      Learn more
+                      BootCamp
                     </a>
                   </div>
 
