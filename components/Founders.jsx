@@ -31,8 +31,8 @@ function Founders() {
                 <p className="text-gray-600 text-center">
                   Has a strong background in computer science, with a degree in
                   the field and a certificate in mobile app development.
-                  Well-versed in JavaScript using in JavaScript frameworks such
-                  as Node.js and using React, and React Native to develop
+                  Well-versed in JavaScript and using its frameworks such
+                  as Node.js and also React to develop
                   full-stack applications. Experienced with Java.
                 </p>
               </div>
