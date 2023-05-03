@@ -33,12 +33,16 @@ export default function Home() {
           Website Development, Website Development Company, Website Development Company in Kenya,
           WavuLabs, WavuLabs Company, WavuLabs Company in Kenya, WavuLabs Company in Nakuru,
           Wavu Labs Company in Africa, Wavu Labs Company in Nairobi, Wavu Labs Company in Nakuru,
-          
+          Business Software, Business Software Company, Business Software Company in Kenya,
+          Business Software Company in Nakuru, Business Software Company in Africa,
+          Business Analytics, Business Analytics Company, Business Analytics Company in Kenya,
+          Business Analytics Software, Business Analytics Software Company, Business Analytics Software Company in Kenya
            "
         />
         <link
           rel="icon"
-          href="https://i.ibb.co/Fgf5z6b/Transparent.png"
+          // href="https://i.ibb.co/Fgf5z6b/Transparent.png"
+          href="https://imgur.com/a/yMNugDk"
           type="image/x-icon"
         />
       </Head>
@@ -50,6 +54,7 @@ export default function Home() {
       <Customers />
       <Contact />
       <Footer />
+
     </div>
   );
 }
