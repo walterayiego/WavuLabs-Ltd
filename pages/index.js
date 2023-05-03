@@ -41,8 +41,7 @@ export default function Home() {
         />
         <link
           rel="icon"
-          // href="https://i.ibb.co/Fgf5z6b/Transparent.png"
-          href="https://imgur.com/a/yMNugDk"
+          href="https://firebasestorage.googleapis.com/v0/b/dishi-admin-dev-5e5ca.appspot.com/o/images%2Fmenus%2F1683111301776_My%20project-1%20(1)_adobe_express.png?alt=media&token=128bf9b9-f36d-473c-8ab8-73d32a806949"
           type="image/x-icon"
         />
       </Head>
