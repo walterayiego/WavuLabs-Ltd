@@ -5,9 +5,8 @@ const About = () => {
   const { ref: ref2, inView: inView2 } = useInView({ threshold: 0.3 });
   return (
     <div
-      
       id="About"
-      className="relative clipPage w-full h-fit p-2 items-center py-16 text-center"
+      className="relative clipPage w-full h-fit p-2 items-center py-16 text-center -z-10 bg-[#1f2937]/10"
     >
       <div className="absolute top-10 left-2 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob"></div>
       <div className="absolute top-0 left-60 w-60 h-60 bg-red-300 rounded-full mix-blend-multiply    filter blur-xl opacity-70 animate-blob animation-delay-6000"></div>
@@ -23,7 +22,7 @@ const About = () => {
           <h2 className="text-xl headings tracking-widest uppercase"> ABOUT</h2>
           <h2 className="py-4 items-center text-center">Who Are We?</h2>
 
-          <div className=" relative p-5 bg-white rounded-lg divide-y divide-slate-200 items-center justify-center">
+          <div className=" relative p-10 bg-white rounded-lg divide-y divide-slate-200 items-center justify-center">
             <h3 className="uppercase text-xl font-semibold text-center tracking-widest text-[#5651e5]">
               Our Vision
             </h3>

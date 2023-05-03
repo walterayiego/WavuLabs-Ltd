@@ -5,7 +5,7 @@ import AlvoPassport from "../public/assets/AlvoPassport.jpeg";
 
 function Founders() {
   return (
-    <div className="w-full h-fit p-6 ">
+    <div className="w-full h-fit m-3 p-6 bg-slate-200 shadow-2xl shadow-slate-300  ">
       <div className=" mx-auto gird grid-col justify-center items-center h-full">
         <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center p-6">
           Founders
@@ -29,11 +29,10 @@ function Founders() {
                 </h3>
                 <p className={`text-gray-600 text-lg py-2`}>Co-Founder & CEO</p>
                 <p className="text-gray-600 text-center">
-                  Has a strong background in computer science, with a degree in
-                  the field and a certificate in mobile app development.
-                  Well-versed in JavaScript and using its frameworks such
-                  as Node.js and also React to develop
-                  full-stack applications. Experienced with Java.
+                  Degree in computer science, a certificate in mobile app
+                  development, cyber security, and CISCO. Well-versed in
+                  JavaScript and using its frameworks such as Node.js and React
+                  to develop full-stack applications. Experienced with using Firebase and Java for backend development.
                 </p>
               </div>
             </div>
@@ -56,11 +55,11 @@ function Founders() {
                 </h3>
                 <p className={`text-gray-600 text-lg py-2`}>Co-Founder & MD</p>
                 <p className="text-gray-600 text-center">
-                A degree in computer science.
-                Strong background in Python Django development. 
-                Experience working with Firebase,building 
-                robust and scalable applications.
-                Familiar with web3 technology, building decentralized applications on Zilliqa and EVM blockchains. 
+                  A degree in computer science. Strong background in Python
+                  Django development. Experience working with Firebase,building
+                  robust and scalable applications. Familiar with web3
+                  technology, building decentralized applications on Zilliqa and
+                  EVM blockchains.
                 </p>
               </div>
             </div>

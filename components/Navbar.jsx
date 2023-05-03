@@ -19,13 +19,15 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const styles= "ml-10 text-sm uppercase hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105"
+  const styles =
+    "ml-10 text-sm uppercase hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105";
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
         setNavBg(
-          "bg-gradient-to-r from-purple-500 via-yellow-300 to-cyan-200 "
+          // "bg-gradient-to-r from-purple-500 via-yellow-300 to-cyan-200 "
+          " sm:bg-white/50 "
         );
         setVisibilityNavList("block");
         setShowImage("block");
@@ -40,14 +42,8 @@ const Navbar = () => {
 
   return (
     <div
-      // style={{ backgroundColor: `${navBg}` }}
-      className={` ${navBg} 
-        ${
-          shadow
-            ? "fixed w-full h-16 bg-transparent shadow-xl z-[100] ease-in-out duration-300"
-            : "fixed w-full h-16 bg-transparent z-[100]"
-        }
-          hideAtStart `}
+      className={` ${navBg} fixed w-full h-16 z-[100] hideAtStart 
+        ${shadow ? " shadow-xl  ease-in-out duration-300" : " "}`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
@@ -65,34 +61,22 @@ const Navbar = () => {
         </Link>
         <div className={`${VisibilityNavList} ease-in duration-100`}>
           <ul style={{ color: `${linkColor}` }} className={`hidden md:flex`}>
-            <li
-              className={`${styles}`}
-            >
+            <li className={`${styles}`}>
               <Link href="/#Home">Home</Link>
             </li>
-            <li
-              className={` ${styles}`}
-            >
+            <li className={` ${styles}`}>
               <Link href="/#Services">Services</Link>
             </li>
-            <li
-              className={` ${styles}`}
-            >
+            <li className={` ${styles}`}>
               <Link href="/#About">About</Link>
             </li>
-            <li
-              className={` ${styles}`}
-            >
+            <li className={` ${styles}`}>
               <Link href="/#projects">Projects</Link>
             </li>
-            <li
-              className={` ${styles}`}
-            >
+            <li className={` ${styles}`}>
               <Link href="/#Customers">Customers</Link>
             </li>
-            <li
-              className={`ml-10 text-sm uppercase hover:border-b ${styles}`}
-            >
+            <li className={`ml-10 text-sm uppercase hover:border-b ${styles}`}>
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
@@ -159,7 +143,7 @@ const Navbar = () => {
               </Link>
               <Link href="/#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                Projects
+                  Projects
                 </li>
               </Link>
               <Link href="/#Customers">

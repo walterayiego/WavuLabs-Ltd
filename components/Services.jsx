@@ -142,7 +142,7 @@ const Services = () => {
         </div>
 
         {/* Other Services */}
-        <div className="w-full p-2 ">
+        <div className="w-full p-2">
           <div className=" mx-auto grid grid-col justify-center items-center h-fit">
             <h4 className="text-xl tracking-widest uppercase headings leading-tight text-center">
               Other services
@@ -186,7 +186,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full">
+              <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full  bg-white/30">
                 <div className="grid grid-rows-3 gap-4 justify-start items-center">
                   <div className=" row-span-1 my-6">
                     <Image
@@ -219,7 +219,7 @@ const Services = () => {
 
             {/* last div */}
 
-            <div className=" mt-10 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className=" mt-10 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300  bg-white">
               <div className="grid grid-rows-3 gap-4 justify-start items-center">
                 <div className="">
                   <Image src={bootcamp} width="64px" height="64px" alt="/" />
