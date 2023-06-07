@@ -9,6 +9,7 @@ import theryze from "../public/assets/projects/theryze.png";
 import kladz from "../public/assets/projects/kladz.png";
 import creek from "../public/assets/projects/creek.png";
 import mrowa from "../public/assets/projects/mrowa.png";
+import dishi from "../public/assets/projects/featureScreen.png";
 
 const Projects = () => {
   return (
@@ -36,54 +37,62 @@ const Projects = () => {
             animeStyle="slide_left"
           />
           <ProjectItem
+            title="Dishi App"
+            backgroundImage={dishi}
+            projectUrl="https://play.google.com/store/apps/details?id=com.dishi.app"
+            tech="React Native, Firebase, Agolia"
+            animeStyle="slide_right"
+          />
+          <ProjectItem
             title="Book a Hike"
             backgroundImage={RoomHike}
             projectUrl="https://roomhike.vercel.app/"
             tech="React JS"
-            animeStyle="slide_right"
+            animeStyle="slide_left"
           />
           <ProjectItem
             title="Online Community"
             backgroundImage={Garage}
             projectUrl="https://thegarage-sepia.vercel.app/"
             tech="React JS"
-            animeStyle="slide_left"
+            animeStyle="slide_right"
           />
           <ProjectItem
             title="Smalltownzebra. Blog Website"
             backgroundImage={smalltownzebra}
             projectUrl="https://smalltownzebra.vercel.app/"
             tech="Next JS"
-            animeStyle="slide_right"
+            animeStyle="slide_left"
           />
           <ProjectItem
             title="Ecommerce Website"
             backgroundImage={kladz}
             projectUrl="https://kladz.vercel.app/"
             tech="React JS"
-            animeStyle="slide_left"
+            animeStyle="slide_right"
           />
           <ProjectItem
             title="Outfit Generator"
             backgroundImage={kgrid}
             projectUrl="https://kgrid.vercel.app/"
             tech="Next JS + AI"
-            animeStyle="slide_right"
+            animeStyle="slide_left"
           />
           <ProjectItem
             title="Landing Page"
             backgroundImage={creek}
             projectUrl="https://creek-agency.vercel.app/"
             tech="Vanilla JS"
-            animeStyle="slide_left"
+            animeStyle="slide_right"
           />
           <ProjectItem
             title="Mrowa. Blog Website"
             backgroundImage={mrowa}
             projectUrl="https://mrowa.vercel.app/"
             tech="Vanilla JS"
-            animeStyle="slide_right"
+            animeStyle="slide_left"
           />
+
           {/* <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
             <p>
               For more visit our
