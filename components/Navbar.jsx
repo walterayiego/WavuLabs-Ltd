@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import LogoTransparent from "../public/assets/Transparent.png";
 import Socials from "./Socials";
+import { Container } from "@mui/material";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,16 +20,11 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const styles =
-    "ml-10 text-sm uppercase hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105";
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setNavBg(
-          // "bg-gradient-to-r from-purple-500 via-yellow-300 to-cyan-200 "
-          " sm:bg-white/50 "
-        );
+        setNavBg(" sm:bg-white/50 ");
         setVisibilityNavList("block");
         setShowImage("block");
         setHideLogo("hidden");
@@ -42,41 +38,42 @@ const Navbar = () => {
 
   return (
     <div
-      className={` ${navBg} fixed w-full h-16 z-[100] hideAtStart 
-        ${shadow ? " shadow-xl  ease-in-out duration-300" : " "}`}
+      className={`${navBg} sticky top-0 w-full h-[12%] z-[100] p-2
+        ${shadow && " shadow-xl duration-300"}`}
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <a className={``}>
-            <div className={`slide_left ${showImage} ease-in`}>
-              <Image
-                src={LogoTransparent}
-                alt="/"
-                width="125"
-                height="50"
-                className={`cursor-pointer `}
-              />
-            </div>
-          </a>
-        </Link>
+      <div className="flex flex-row justify-between items-center w-full h-full">
+        <div className={`slide_left ease-in`}>
+          <Link href="/">
+            <Image
+              src={LogoTransparent}
+              alt="/"
+              width="125"
+              height="50"
+              className={`cursor-pointer ${showImage}  `}
+            />
+          </Link>
+        </div>
         <div className={`${VisibilityNavList} ease-in duration-100`}>
-          <ul style={{ color: `${linkColor}` }} className={`hidden md:flex`}>
-            <li className={`${styles}`}>
+          <ul
+            style={{ color: `${linkColor}` }}
+            className={`hidden md:flex space-x-3`}
+          >
+            <li className={`nav-list`}>
               <Link href="/#Home">Home</Link>
             </li>
-            <li className={` ${styles}`}>
+            <li className={` nav-list`}>
               <Link href="/#Services">Services</Link>
             </li>
-            <li className={` ${styles}`}>
+            <li className={` nav-list`}>
               <Link href="/#About">About</Link>
             </li>
-            <li className={` ${styles}`}>
+            <li className={` nav-list`}>
               <Link href="/#projects">Projects</Link>
             </li>
-            <li className={` ${styles}`}>
+            <li className={` nav-list`}>
               <Link href="/#Customers">Customers</Link>
             </li>
-            <li className={`ml-10 text-sm uppercase hover:border-b ${styles}`}>
+            <li className={`ml-10 text-sm uppercase hover:border-b nav-list`}>
               <Link href="/#contact">Contact</Link>
             </li>
           </ul>
@@ -95,7 +92,7 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav && "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
         }
       >
         {/* Side Drawer Menu */}
