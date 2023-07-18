@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import LogoTransparent from "../public/assets/Transparent.png";
 import Socials from "./Socials";
-import { Container } from "@mui/material";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
