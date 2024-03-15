@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import WaltPassport from "../public/assets/waltpassport.jpg";
-import AlvoPassport from "../public/assets/AlvoPassport.jpeg";
+import WaltPassport from "../public/assets/waltpassport.png";
+import AlvoPassport from "../public/assets/AlvoPassport.png";
 
 function Founders() {
   return (
