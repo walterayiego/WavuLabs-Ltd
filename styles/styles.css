@@ -1,6 +1,16 @@
 .nav-list {
-  @apply text-sm uppercase hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105;
+  @apply text-sm uppercase border-[#5651e5] hover:border-b drop-shadow-2xl shadow-red-200 hover:scale-105;
 }
+
+.lists li {
+  @apply text-sm uppercase mx-2 ;
+}
+
+.lists li:hover {
+  @apply border-b scale-105 border-[#5651e5] drop-shadow-2xl shadow-red-200;
+}
+
+
 .slide_left {
   animation: slide_left ease-in forwards;
   animation-delay: 50ms;

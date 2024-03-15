@@ -11,11 +11,11 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="mx-auto container max-w-6xl relative clipPage scrollbar-hide ">
+    <div className="mx-auto relative clipPage scrollbar-hide ">
       <Head>
-        <title>WavuLabs</title>
+        <title>WavuLab</title>
         <meta
-          name="WavuLabs"
+          name="WavuLab"
           content="
         WavuLabs is a software development company that provides custom IT solutions 
         to startups and enterprises. We are a team of software engineers, designers, and project managers. 

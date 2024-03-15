@@ -5,82 +5,86 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import LogoTransparent from "../public/assets/Transparent.png";
 import Socials from "./Socials";
 
-const Navbar = () => {
-  const [nav, setNav] = useState(false);
-  const [VisibilityNavList, setVisibilityNavList] = useState("hidden");
-  const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const [btnShadow, setBtnShadow] = useState("");
-  const [showImage, setShowImage] = useState("hidden");
-  const [hideLogo, setHideLogo] = useState("");
+const linkColor = "#1f2937";
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+const Navbar = () => {
+  const [navState, setNavState] = useState({
+    nav: false,
+    showNav: "hidden",
+    shadow: false,
+    navBg: "",
+  });
+
+  const handleNav = () => setNavState({ ...navState, nav: !navState.nav });
 
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
-        setShadow(true);
-        setNavBg(" sm:bg-white/50 ");
-        setVisibilityNavList("block");
-        setShowImage("block");
-        setHideLogo("hidden");
+        setNavState({
+          ...navState,
+          shadow: true,
+          navBg: "sm:bg-white/50",
+          showNav: "block",
+        });
       } else {
-        setShadow(false);
-        setNavBg("");
+        setNavState({
+          ...navState,
+          shadow: false,
+          navBg: "",
+          showNav: "block",
+        });
       }
     };
     window.addEventListener("scroll", handleShadow);
+    return () => window.removeEventListener("scroll", handleShadow);
   }, []);
+
+  const closeNav = () => setNavState({ ...navState, nav: false });
+
+  const generateListItems = () => {
+    const sections = [
+      "Home",
+      "Services",
+      "About",
+      "Projects",
+      "Customers",
+      "Contact",
+    ];
+    return sections.map((section) => (
+      <Link href={`/#${section}`} key={section}>
+        <li onClick={closeNav} className="py-4 text-sm nav-list cursor-pointer">
+          {section}
+        </li>
+      </Link>
+    ));
+  };
 
   return (
     <div
-      className={`${navBg} sticky top-0 w-full h-[12%] z-[100] p-2
-        ${shadow && " shadow-xl duration-300"}`}
+      className={`${navState.navBg} sticky top-0 w-full h-[12%] z-[100] p-2 ${
+        navState.shadow ? "shadow-xl ease-in-out duration-300" : ""
+      }`}
     >
-      <div className="flex flex-row justify-between items-center w-full h-full">
-        <div className={`slide_left ease-in`}>
+      <div
+        className={`flex justify-between items-center w-full h-full ease-in duration-100 ${navState.showNav}`}
+      >
+        <div className="slide_left ease-in cursor-pointer">
           <Link href="/">
-            <Image
-              src={LogoTransparent}
-              alt="/"
-              width="125"
-              height="50"
-              className={`cursor-pointer ${showImage}  `}
-            />
+            <Image src={LogoTransparent} alt="/" width="125" height="50" />
           </Link>
         </div>
-        <div className={`${VisibilityNavList} ease-in duration-100`}>
+        <div className="flex flex-row justify-end ease-in duration-100 w-1/2">
           <ul
-            style={{ color: `${linkColor}` }}
-            className={`hidden md:flex space-x-3`}
+            style={{ color: linkColor }}
+            className="hidden md:flex md:justify-between md:flex-1"
           >
-            <li className={`nav-list`}>
-              <Link href="/#Home">Home</Link>
-            </li>
-            <li className={` nav-list`}>
-              <Link href="/#Services">Services</Link>
-            </li>
-            <li className={` nav-list`}>
-              <Link href="/#About">About</Link>
-            </li>
-            <li className={` nav-list`}>
-              <Link href="/#projects">Projects</Link>
-            </li>
-            <li className={` nav-list`}>
-              <Link href="/#Customers">Customers</Link>
-            </li>
-            <li className={`ml-10 text-sm uppercase hover:border-b nav-list`}>
-              <Link href="/#contact">Contact</Link>
-            </li>
+            {generateListItems()}
           </ul>
           {/* Hamburger Icon */}
           <div
-            style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden"
+            style={{ color: linkColor }}
+            className="md:hidden cursor-pointer"
           >
             <AiOutlineMenu size={25} />
           </div>
@@ -91,14 +95,15 @@ const Navbar = () => {
       {/* Overlay */}
       <div
         className={
-          nav && "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+          navState.nav &&
+          "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
         }
       >
         {/* Side Drawer Menu */}
         <div
           className={
-            nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+            navState.nav
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500 opacity-0"
           }
         >
@@ -121,38 +126,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
-              <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
-                </li>
-              </Link>
-              <Link href="/#Services">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Services
-                </li>
-              </Link>
-              <Link href="/#About">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
-                </li>
-              </Link>
-              <Link href="/#Customers">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Customers
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
-                </li>
-              </Link>
-            </ul>
+            <ul className="uppercase">{generateListItems()}</ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let&#39;s Connect
