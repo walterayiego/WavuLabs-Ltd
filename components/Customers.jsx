@@ -20,7 +20,7 @@ const Customers = () => {
       <h3 className="text-center py-9 font-bold text-2xl headings">
         What we promise
       </h3>
-      <p className="text-center py-3 font-semibold text-2xl"> 
+      <p className="text-center py-2 font-semibold text-2xl"> 
         How we serve our clients
       </p>
 
