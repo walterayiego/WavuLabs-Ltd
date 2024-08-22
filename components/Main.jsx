@@ -55,18 +55,14 @@ const Main = () => {
               <Image
                 src={LogoTransparentLeft}
                 alt="/"
-                width={150}
-                height={100}
-                className={`cursor-pointer slide_left `}
+                className="aspect-square w-[10vw] cursor-pointer slide_left"
               />
             </div>
             <div className=" ease-in mergeRight">
               <Image
                 src={LogoTransparentRight}
                 alt="/"
-                width={150}
-                height={100}
-                className={`cursor-pointer `}
+                className="aspect-square w-[10vw] cursor-pointer slide_left"
               />
             </div>
           </div>

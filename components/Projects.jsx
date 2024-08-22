@@ -92,18 +92,6 @@ const Projects = () => {
             tech="Vanilla JS"
             animeStyle="slide_left"
           />
-
-          {/* <div className=" flex flex-col text-center py-3 mb-4 font-semibold text-2xl">
-            <p>
-              For more visit our
-              <Link href="">
-                <a className=" text-yellow-800 font-semibold text-2xl ">
-                  {" "}
-                  Github Page
-                </a>
-              </Link>
-            </p>
-          </div> */}
         </div>
       </div>
     </div>

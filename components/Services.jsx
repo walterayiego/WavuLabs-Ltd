@@ -7,7 +7,7 @@ import Maintenance from "../public/assets/Icons/Maintenance.png";
 import DigitalMarketing from "../public/assets/Icons/DigitalMarketing.png";
 import BusinessAnalyticts from "../public/assets/Icons/BusinessAnalyticts.png";
 import bootcamp from "../public/assets/Icons/bootcamp.png";
-import { Link } from "@nextui-org/react";
+
 const Services = () => {
   const { ref, inView } = useInView({ threshold: 0.8, triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({
@@ -34,10 +34,10 @@ const Services = () => {
       <div className="absolute top-1/4 right-10 w-60 h-60 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-7 -right-1/4 w-60 h-60 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-      <div className=" gap-y-6 mx-2 px-1 sm:px-10 ">
+      <div className="flex flex-col gap-y-[5vh] mx-2 px-1 sm:px-10 ">
         <div
           ref={ref}
-          className="sm:grid grid-cols-3 bg-slate-200 scale-105 drop-shadow-2xl  rounded-xl py-7"
+          className="sm:grid grid-cols-3 bg-slate-200 scale-105 drop-shadow-2xl  rounded-xl py-7 h-fit"
         >
           <div className={`col-span-2  ${inView ? "slide_left" : "opacity-0"}`}>
             <h3 className="uppercase text-2xl text-[#5651e5]">
@@ -57,13 +57,13 @@ const Services = () => {
           </div>
           {/* image div */}
           <div
-            className={`w-full h-full ${
+            className={`h-full ${
               inView ? "fade_in" : "opacity-0"
             } shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300`}
           >
             <Image
               src={Block2}
-              className="w-full h-full rounded-xl object-cover"
+              className="aspect-auto rounded-xl object-cover"
               alt="/"
             />
           </div>
@@ -152,12 +152,11 @@ const Services = () => {
               {/* content */}
               <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full">
                 <div className="grid grid-rows-3 gap-4 justify-start items-center">
-                  <div className="">
+                  <div className="w-full flex flex-row items-center justify-center">
                     <Image
                       src={BusinessAnalyticts}
-                      width="64px"
-                      height="64px"
                       alt="/"
+                      className="aspect-square w-[20vw] sm:w-[9vw]"
                     />
                   </div>
                   <div className="grid grid-col row-span-2 items-center justify-start">
@@ -188,11 +187,10 @@ const Services = () => {
 
               <div className=" shadow-xl rounded-xl hover:scale-105 ease-in duration-300 p-3 h-full  bg-white/30">
                 <div className="grid grid-rows-3 gap-4 justify-start items-center">
-                  <div className=" row-span-1 my-6">
+                  <div className="w-full flex flex-row items-center justify-center">
                     <Image
                       src={DigitalMarketing}
-                      width="64px"
-                      height="64px"
+                      className="aspect-square w-[20vw] sm:w-[9vw]"
                       alt="/"
                     />
                   </div>
@@ -221,8 +219,8 @@ const Services = () => {
 
             <div className=" mt-10 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300  bg-white">
               <div className="grid grid-rows-3 gap-4 justify-start items-center">
-                <div className="">
-                  <Image src={bootcamp} width="64px" height="64px" alt="/" />
+                <div className=" flex flex-row items-center justify-center">
+                  <Image src={bootcamp} className="aspect-square w-[20vw] sm:w-[9vw]" alt="/" />
                 </div>
                 <div className="flex flex-col row-span-2 items-center justify-start">
                   <h3 className="uppercase text-xl tracking-widest text-[#5651e5]">

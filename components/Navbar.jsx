@@ -52,7 +52,7 @@ const Navbar = () => {
     ];
     return sections.map((section) => (
       <Link href={`/#${section}`} key={section}>
-        <li onClick={closeNav} className="py-4 text-sm nav-list cursor-pointer">
+        <li onClick={closeNav} className="py-4 px-1 text-sm nav-list cursor-pointer">
           {section}
         </li>
       </Link>
@@ -111,9 +111,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <a>
-                  <Image src={LogoTransparent} width="87" height="35" alt="/" />
-                </a>
+                <Image src={LogoTransparent} width="87" height="35" alt="/" />
               </Link>
               <div
                 onClick={handleNav}

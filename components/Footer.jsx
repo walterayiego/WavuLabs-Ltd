@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className=" relative bottom-0 clipPage flex  w-full h-96 justify-center items-end bg-[#1f2937] text-white"
+      className=" relative clipPage flex justify-center items-center w-full h-[40vh]  bg-[#1f2937] text-white"
     >
       <div className="wave ">
         <svg
@@ -23,20 +23,20 @@ const Footer = () => {
         </svg>
       </div>
 
-      <div className="flex  flex-col pb-10 relative max-w-full bottom-0 gap-4  ">
+      <div className="flex flex-col w-1/2 self-end pb-5 sm:w-1/3 space-y-3 items-center">
         {/* CREATING THE LOGO DIV */}
-        <div className=" flex justify-center items-center grid-cols-3 gap-1 pb-2">
-          <div className=" flex justify-center">
-            <Image src={LogoTransparent} alt="" width="120px" height="50px" />
+        <div className="hidden sm:flex  flex-row justify-center items-center w-1/2 h-[10vh] py-2">
+          <div className="w-1/2">
+            <Image src={LogoTransparent} alt="" className="aspect-auto" />
           </div>
-          <div className="row-span-3 ">
+          <div className="px-1">
             <h3 className="text-2xl">WavuLabs</h3>
             <h3 className="text-2xl">We Wav u</h3>
           </div>
         </div>
         {/* CREATING THE LOGO DIV END*/}
 
-        <span className="">
+        <span className="text-ellipsis">
           Copyright by {new Date().getFullYear()} All rights reserved
         </span>
         <Socials styles="justify-center gap-2 h-16 items-center justify-between max-w-[330px]" />
