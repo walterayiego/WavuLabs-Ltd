@@ -46,7 +46,7 @@ const Navbar = () => {
       "Home",
       "Services",
       "About",
-      "Projects",
+      // "Projects",
       "Customers",
       "Contact",
     ];
